@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd http://xmlns.jcp.org/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="5.0">
+  <display-name>CarRentals</display-name>
+  <welcome-file-list>
+    <welcome-file>homepage.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  <filter>
+    <display-name>AuthenticationFilter</display-name>
+    <filter-name>AuthenticationFilter</filter-name>
+    <filter-class>com.webapp.project.filters.AuthenticationFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>AuthenticationFilter</filter-name>
+    <url-pattern>/AuthenticationFilter</url-pattern>
+  </filter-mapping>
+  <servlet>
+    <description></description>
+    <display-name>CarPageServlet</display-name>
+    <servlet-name>CarPageServlet</servlet-name>
+    <servlet-class>com.webapp.project.servlets.CarPageServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CarPageServlet</servlet-name>
+    <url-pattern>/CarPageServlet</url-pattern>
+  </servlet-mapping>
+  <filter>
+    <display-name>LoggingFilter</display-name>
+    <filter-name>LoggingFilter</filter-name>
+    <filter-class>com.webapp.project.filters.LoggingFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>LoggingFilter</filter-name>
+    <url-pattern>/LoggingFilter</url-pattern>
+  </filter-mapping>
+</web-app>
