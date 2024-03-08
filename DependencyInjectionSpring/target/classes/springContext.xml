@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="tyre1Bean" class="com.JEE.classes.Tyres">
+        <property name="name" value="MRF">
+        </property>
+
+        <property name="place" value="India">
+        </property>
+
+        <property name="message" value="Make in India">
+        </property>
+
+    </bean>
+
+    <bean id="TotoyaBean" class="com.JEE.classes.TotoyaEngine">
+        <property name="company" value="Totoya">
+        </property>
+
+        <property name="cost" value="300000.00">
+        </property>
+
+    </bean>
+
+    <bean id="tyre2Bean" class="com.JEE.classes.Tyres">
+        <property name="name" value="TVS">
+        </property>
+
+        <property name="place" value="India">
+        </property>
+
+        <property name="message" value="Make in India">
+        </property>
+
+    </bean>
+
+    <bean id="InjectwithSetter" class="com.JEE.classes.Vehicle">
+        <property name="engine" ref="TotoyaBean">
+        </property>
+
+        <property name="tyre" ref="tyre1Bean">
+        </property>
+
+    </bean>
+
+    <bean id="InjectwithConstructor" class="com.JEE.classes.Vehicle">
+        <constructor-arg name="engine" ref="TotoyaBean">
+        </constructor-arg>
+
+        <constructor-arg name="tyre" ref="tyre2Bean">
+        </constructor-arg>
+    </bean>
+</beans>
+
