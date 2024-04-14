@@ -1,0 +1,97 @@
+.users-container {
+    display: block;
+    width: 60%;
+    margin: auto;
+    min-width: 800px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(30px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    border-radius: 20px;
+    padding: 20px;
+  }
+  
+  .users-container h2 {
+    font-size: 40px;
+    text-align: center;
+    margin: 20px;
+    color: white;
+  }
+  
+  .filters {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .filters input,select {
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .users-table {
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    width: 100%;
+  }
+  
+  .users-table th,
+  .users-table td {
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .users-table th {
+    border-radius: 20px;
+    background-color: #f2f2f2;
+  }
+  
+  .users-table td button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .users-table .update-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .users-table tr:hover {
+    background-color: #e0e0e0;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .error {
+    color: #ff6347;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .users-table button{
+    margin-left: 10px;
+  }
+ 
+  .users-table .delete-button{
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .users-table .delete-button:hover{
+    background-color: #ff6347;    
+
+} 

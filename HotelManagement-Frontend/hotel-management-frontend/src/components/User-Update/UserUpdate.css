@@ -1,0 +1,82 @@
+.user-update-container {
+    display: block;
+    width: 40%;
+    min-width: 400px;
+    margin: 50px auto;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(30px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    border-radius: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1); /* Adjust the background color opacity */
+  }
+  
+  .user-update-container h2 {
+    font-size: 40px;
+    text-align: center;
+    margin: 20px;
+    color: white;
+  }
+  
+  .user-update-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .user-update-form label {
+    margin-bottom: 10px;
+    color: white;
+    font-size: 24px;
+  }
+  
+  .user-update-form input[type="text"],
+  .user-update-form input[type="email"],
+  .user-update-form input[type="password"],
+  .user-update-form select {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 24px;
+  }
+  
+
+  
+
+  .user-update-form button {
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 8px;
+    margin:10px ;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    margin-top: 20px;
+  }
+  .user-update-form .confirm-button {
+
+    background-color: #007bff;
+
+  }
+  .user-update-form .cancel-button {
+
+    background-color: red;
+
+  }  
+  .user-update-form .confirm-button:hover {
+    background-color: #0056b3;
+  }
+  .user-update-form .cancel-button:hover {
+    background-color: #ff6347;
+  }
+  
+  .error {
+    color: #ff6347;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  

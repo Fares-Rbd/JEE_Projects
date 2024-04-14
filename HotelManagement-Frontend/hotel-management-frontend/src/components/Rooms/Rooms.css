@@ -1,0 +1,122 @@
+/* RoomList.css */
+
+
+.room-list {
+  display: block;
+  width: 80%;
+  margin: auto;
+}
+
+.room-list h2 {
+  font-size: 40px;
+  text-align: center;
+  margin: 20px;
+  color: white;
+}
+
+.cards-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 280px)); /* Adjust minmax value for desired card width */
+  gap: 20px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  justify-content: center; /* Center cards horizontally */
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(30px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  border-radius: 10px;
+}
+
+.card {
+  background-color: rgba(255, 255, 255,.7 );
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 10px;
+  width: 100%; /* Make cards take full width of grid cell */
+  box-sizing: border-box; /* Include padding in card width */
+  transition: transform 0.3s ease-in-out; /* Add transition effect */
+  position: relative; /* Ensure button position is relative to card */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Move card up by 5px on hover */
+}
+
+.card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #a0c0d0; /* Light pastel blue */
+}
+
+.card p {
+  color: black;
+  margin-bottom: 10px;
+}
+
+/* Error styling */
+.error {
+  color: #ff6347;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Filter container styling */
+.filter-container {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.filter-container input {
+  margin-right: 10px;
+  margin-left: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.filter-container input::placeholder {
+  color: #999;
+}
+
+.filter-container input[type="date"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.filter-container p{
+  color: white;
+  font-size: 20px;
+  margin-left: 2;
+}
+/* Button styling */
+.reservation-button {
+  visibility: hidden;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: visibility 0s, opacity 0.3s ease-in-out; /* Add transition effect */
+}
+
+.card:hover .reservation-button {
+  visibility: visible; /* Show button on hover */
+  opacity: .8; /* Ensure button is fully visible */
+}
+
+.reservation-button:hover {
+  background-color: #0056b3;
+}
